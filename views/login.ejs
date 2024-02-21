@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HOME - MARVEL </title>
+</head>
+<body>
+    <header class="bg-red-500 w-full h-[10vh] text-white flex justify-center items-center">
+        <a class="mx-[1em]" href="/">home</a>
+        <a class="mx-[1em]" href="/login">login</a> |
+        <a class="mx-[1em]" href="/register">register</a>
+    </header>
+    <div class="main w-full h-[90vh] flex justify-center items-center flex-col">
+        <form action="/login" method="post" class="flex flex-col justify-center items-center border-[2px] border-black rounded w-[30%] h-[50vh]">
+            <span class="my-3">Email</span>
+            <input type="email" placeholder=" Ingrese el email" name="email" class="my-3 border border-black rounded" required>
+            <span class="my-3">Password</span>
+            <input type="text" placeholder=" Ingrese la contraseña" name="password" class="my-3 border border-black rounded" required>
+            <button type="submit" class="my-3 border-[2px] border-red-500 p-1 bg-red-500 rounded text-white w-[20%] ">Login</button>
+            <a href="/recup" class="my-3">¿ Se te ha olvidado la contraseña ?</a>
+        </form>
+    </div>
+
+</body>
+</html>

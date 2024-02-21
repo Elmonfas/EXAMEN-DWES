@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HOME - MARVEL </title>
+</head>
+<body>
+    <header class="bg-black w-full h-[10vh] text-white flex justify-center items-center">
+        <a class="mx-[1em]" href="/">home</a>
+        <a class="mx-[1em]"  href="#">Profile</a> |
+        <a class="mx-[1em]" href="/login">login</a> |
+        <a class="mx-[1em]" href="/register">register</a>
+    </header>
+    <div class="main w-full h-[90vh] flex justify-center items-center flex-col">
+
+        <% if (peliculas) { %>
+            <h2 class="text-[5em] bg-white text-black font-bold"> No hay peliculas, añadelas tu mismo </h2>
+            <button class="bg-white text-black">Añadir peliculas</button>
+          <% } %>
+
+          
+    </div>
+    <style>
+        .main{
+            background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2019/07/hipertextual-ver-avengers-endgame-4k-2019810743-scaled.jpeg?fit=1200%2C675&quality=70&strip=all&ssl=1');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</body>
+</html>
